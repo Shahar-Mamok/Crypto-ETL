@@ -1,0 +1,10 @@
+﻿coingecko:
+  vs_currency: "usd"
+  coin_ids: ["bitcoin", "ethereum"]
+  days: 30
+paths:
+  db: "data/warehouse.db"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+logging:
+  file: "logs/pipeline.log"
