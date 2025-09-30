@@ -1,0 +1,5 @@
+coin_id,holding_name,allocation_pct,cost_basis,current_value
+bitcoin,Long Term BTC,40,20000,34000
+ethereum,Core ETH,35,1200,1900
+cardano,ADA Yield,15,0.15,0.38
+solana,SOL Staking,10,18,32

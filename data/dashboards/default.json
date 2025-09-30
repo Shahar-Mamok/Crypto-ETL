@@ -1,0 +1,48 @@
+{
+  "columns": 2,
+  "widgets": [
+    {
+      "id": "market_kpis",
+      "config": {
+        "metrics": [
+          "total_market_cap",
+          "volume_24h",
+          "avg_change_24h"
+        ]
+      }
+    },
+    {
+      "id": "price_chart",
+      "config": {
+        "coins": [],
+        "chart_type": "line",
+        "normalize": false,
+        "full_width": true
+      }
+    },
+    {
+      "id": "market_table",
+      "config": {
+        "columns": [
+          "name",
+          "symbol",
+          "current_price",
+          "market_cap",
+          "total_volume",
+          "price_change_percentage_24h"
+        ],
+        "top_n": 10,
+        "sort_column": "market_cap",
+        "descending": true
+      }
+    },
+    {
+      "id": "alerts",
+      "config": {
+        "metric": "price_change_percentage_24h",
+        "direction": "above",
+        "threshold": 10.0
+      }
+    }
+  ]
+}
