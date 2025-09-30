@@ -51,8 +51,13 @@ crypto-etl-streamlit/
    ```
 
 ## Usage Guidelines
-- Use the Streamlit interface to interact with the data visualizations.
-- Ensure that the ETL process is executed before attempting to visualize the data.
+- Run `python -m etl.pipeline` to populate the SQLite warehouse with the latest market and price-history data.
+- Launch the Streamlit workbench with `streamlit run ui/app.py`.
+- Use the sidebar to:
+  - Apply global filters (coins, market capitalization, performance, and history range).
+  - Choose which widgets should appear on the dashboard and configure each widget individually.
+  - Save personal layouts to `data/dashboards/` or reload previously stored presets.
+- Supplementary datasets (for example `data/processed/sample_portfolio.csv`) can be registered in `configs/config.yaml` and surface additional widgets such as portfolio views.
 - Monitor the logs in the `logs/` directory for any issues during the ETL process.
 
 ## Contributing
